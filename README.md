@@ -11,6 +11,20 @@ vi networks.conf
 :wq!
 ```
 
+#### sailinnthu GitHub Account
+```
+ssh-keygen -t rsa -b 4096 -C "sailinnthu@gmail.com"
+github.com.sailinnthu
+pbcopy < ~/.ssh/github.com.sailinnthu.pub
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github.com.sailinnthu
+ssh -T git@github.com
+
+git config user.name "sailinnthu"
+git config user.email "sailinnthu@gmail.com"
+```
+
 #### Up and Running vagrant box
 ```
 git clone git@github.com:hellocloudio/hellocloud-native-box.git
