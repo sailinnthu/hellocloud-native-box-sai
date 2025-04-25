@@ -62,3 +62,6 @@ vagrant@gcloud-cli-box:~$ asdf global istioctl 1.13.5
 vagrant@gcloud-cli-box:~$ istioctl version
 no running Istio pods in "istio-system"
 1.13.5
+
+asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
+asdf plugin-add kind https://github.com/virtualstaticvoid/asdf-kind.git
